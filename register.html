@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register — MyShop</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a class="logo" href="index.html">MyShop</a>
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+    </div>
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <main class="container narrow">
+    <h2>Create Account</h2>
+    <form id="registerForm" class="form">
+      <label>Full Name
+        <input type="text" id="regName" required placeholder="Your Name"/>
+      </label>
+      <label>Email
+        <input type="email" id="regEmail" required placeholder="you@example.com"/>
+      </label>
+      <label>Password
+        <input type="password" id="regPassword" minlength="6" required placeholder="min 6 chars"/>
+      </label>
+      <label>Confirm Password
+        <input type="password" id="regConfirm" minlength="6" required placeholder="repeat password"/>
+      </label>
+      <button type="submit" class="btn">Register</button>
+      <div id="registerMessage" class="message"></div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> MyShop. Built for learning.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

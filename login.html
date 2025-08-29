@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login — MyShop</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a class="logo" href="index.html">MyShop</a>
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+    </div>
+    <div class="nav-right">
+      <a href="register.html">Register</a>
+    </div>
+  </nav>
+
+  <main class="container narrow">
+    <h2>Login</h2>
+    <form id="loginForm" class="form">
+      <label>Email
+        <input type="email" id="loginEmail" required placeholder="you@example.com"/>
+      </label>
+      <label>Password
+        <input type="password" id="loginPassword" required placeholder="••••••••"/>
+      </label>
+      <button type="submit" class="btn">Login</button>
+      <p class="muted">Don't have an account? <a href="register.html">Register</a></p>
+      <div id="loginMessage" class="message"></div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> MyShop. Built for learning.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
